@@ -18,14 +18,18 @@ package com.taobao.gecko.example.rpc.example.client;
 import com.taobao.gecko.example.rpc.client.RpcProxyFactory;
 import com.taobao.gecko.example.rpc.example.Hello;
 import com.taobao.gecko.example.rpc.example.server.HelloImpl;
+import com.taobao.gecko.service.Connection;
 
 
 public class HelloClient {
+	
+	Connection con;
+	
     public static void main(String[] args) throws Exception {
         RpcProxyFactory factory = new RpcProxyFactory();
         Hello hello = factory.proxyRemote("rpc://localhost:8080", "hello", Hello.class);
         System.out.println(hello.sayHello("×¯Ïþµ¤", 10000));
-        long start = System.currentTimeMillis();
+       /* long start = System.currentTimeMillis();
         for (int i = 0; i < 10000; i++) {
             hello.add(1, 300);
         }
@@ -36,6 +40,6 @@ public class HelloClient {
             helloImpl.add(1, 300);
         }
         System.out.println(System.currentTimeMillis() - start);
-        System.out.println(hello.getDate());
+        System.out.println(hello.getDate());*/
     }
 }

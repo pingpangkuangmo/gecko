@@ -325,6 +325,7 @@ public class NioTCPSession extends AbstractNioSession {
         int size = this.readBuffer.remaining();
         while (this.readBuffer.hasRemaining()) {
             try {
+            	System.out.println(this.decoder);
                 message = this.decoder.decode(this.readBuffer, this);
                 if (message == null) {
                     break;

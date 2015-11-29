@@ -1,0 +1,159 @@
+07:30:24,429  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=-1, keepAlive=true, linger=0, maxCallBackCountPerConnection=1000000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=631941, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=10, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=8, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+07:30:24,439  INFO SelectorManager:57 - Creating 8 rectors...
+07:30:24,469  WARN AbstractController:372 - The Controller started at /0:0:0:0:0:0:0:0:8080 ...
+07:30:35,204  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=10, keepAlive=true, linger=0, maxCallBackCountPerConnection=100000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=189582540, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=0, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=4, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+07:30:35,215  INFO SelectorManager:57 - Creating 4 rectors...
+07:30:35,226  WARN AbstractController:372 - The Controller started at null ...
+07:31:15,633  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+07:31:15,633  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+07:31:15,633  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+07:31:50,814  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+07:31:50,814  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+07:31:50,814  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+07:32:11,011 ERROR DefaultExceptionMonitor:58 - Gecko unexpected exception
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at com.taobao.gecko.core.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:238)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:309)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:508)
+	at com.taobao.gecko.core.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:80)
+	at com.taobao.gecko.core.nio.impl.NioController$ReadTask.run(NioController.java:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+23:09:30,266  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=-1, keepAlive=true, linger=0, maxCallBackCountPerConnection=1000000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=631941, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=10, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=8, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:09:30,290  INFO SelectorManager:57 - Creating 8 rectors...
+23:09:30,323  WARN AbstractController:372 - The Controller started at /0:0:0:0:0:0:0:0:8080 ...
+23:09:51,738  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=10, keepAlive=true, linger=0, maxCallBackCountPerConnection=100000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=189582540, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=0, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=4, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:09:51,751  INFO SelectorManager:57 - Creating 4 rectors...
+23:09:51,771  WARN AbstractController:372 - The Controller started at null ...
+23:10:26,862  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+23:10:26,867  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:10:26,870  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:10:50,306 ERROR DefaultExceptionMonitor:58 - Gecko unexpected exception
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at com.taobao.gecko.core.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:238)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:309)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:508)
+	at com.taobao.gecko.core.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:80)
+	at com.taobao.gecko.core.nio.impl.NioController$ReadTask.run(NioController.java:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+23:11:35,329  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=-1, keepAlive=true, linger=0, maxCallBackCountPerConnection=1000000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=631941, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=10, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=8, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:11:35,343  INFO SelectorManager:57 - Creating 8 rectors...
+23:11:35,370  WARN AbstractController:372 - The Controller started at /0:0:0:0:0:0:0:0:8080 ...
+23:11:44,004  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=10, keepAlive=true, linger=0, maxCallBackCountPerConnection=100000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=189582540, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=0, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=4, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:11:44,017  INFO SelectorManager:57 - Creating 4 rectors...
+23:11:44,037  WARN AbstractController:372 - The Controller started at null ...
+23:12:19,613  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+23:12:19,615  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:12:19,617  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:12:32,185 ERROR DefaultExceptionMonitor:58 - Gecko unexpected exception
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at com.taobao.gecko.core.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:238)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:309)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:508)
+	at com.taobao.gecko.core.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:80)
+	at com.taobao.gecko.core.nio.impl.NioController$ReadTask.run(NioController.java:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+23:12:44,781  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=-1, keepAlive=true, linger=0, maxCallBackCountPerConnection=1000000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=631941, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=10, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=8, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:12:44,796  INFO SelectorManager:57 - Creating 8 rectors...
+23:12:44,826  WARN AbstractController:372 - The Controller started at /0:0:0:0:0:0:0:0:8080 ...
+23:12:52,054  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=10, keepAlive=true, linger=0, maxCallBackCountPerConnection=100000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=189582540, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=0, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=4, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:12:52,066  INFO SelectorManager:57 - Creating 4 rectors...
+23:12:52,084  WARN AbstractController:372 - The Controller started at null ...
+23:13:27,639  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+23:13:27,641  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:13:27,643  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:14:03,149  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+23:14:03,151  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:14:03,152  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:14:38,657  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+23:14:38,658  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:14:38,660  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:15:14,165  INFO GeckoHandler:132 - 心跳检测失败，关闭连接localhost/127.0.0.1:8080,分组信息[DefaultRemotingContext_Notify_Default_Group_Name, rpc://localhost:8080]
+23:15:14,167  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:15:14,168  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:15:18,834 ERROR DefaultExceptionMonitor:58 - Gecko unexpected exception
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at com.taobao.gecko.core.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:238)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:309)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:508)
+	at com.taobao.gecko.core.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:80)
+	at com.taobao.gecko.core.nio.impl.NioController$ReadTask.run(NioController.java:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+23:16:09,099  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=-1, keepAlive=true, linger=0, maxCallBackCountPerConnection=1000000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=631941, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=10, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=8, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:16:09,112  INFO SelectorManager:57 - Creating 8 rectors...
+23:16:09,136  WARN AbstractController:372 - The Controller started at /0:0:0:0:0:0:0:0:8080 ...
+23:16:16,033  INFO BaseRemotingController:111 - 即将启动RemotingController...
+配置为：
+BaseConfig [callBackExecutorPoolSize=3, callBackExecutorQueueSize=20000, dispatchMessageThreadCount=0, idleTime=10, keepAlive=true, linger=0, maxCallBackCountPerConnection=100000, maxCallBackExecutorPoolSize=30, maxReadBufferSize=0, maxScheduleWrittenBytes=189582540, rcvBufferSize=65536, readBufferSize=131072, readThreadCount=0, reuseAddr=true, scanInvalidCallBackInterval=300, selectorPoolSize=4, sndBufferSize=65536, soLinger=true, tcpNoDelay=true, wireFormatType=Notify Remoting rpc, writeThreadCount=0]
+23:16:16,044  INFO SelectorManager:57 - Creating 4 rectors...
+23:16:16,065  WARN AbstractController:372 - The Controller started at null ...
+23:16:45,049  INFO GeckoHandler:330 - 远端连接127.0.0.1:8080关闭，启动重连任务
+23:16:45,051  INFO ReconnectManager:129 - Try to reconnect to 127.0.0.1:8080
+23:16:45,054 ERROR DefaultExceptionMonitor:58 - Gecko unexpected exception
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at com.taobao.gecko.core.nio.impl.NioTCPSession.readFromBuffer(NioTCPSession.java:238)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onRead(AbstractNioSession.java:309)
+	at com.taobao.gecko.core.nio.impl.AbstractNioSession.onEvent(AbstractNioSession.java:508)
+	at com.taobao.gecko.core.nio.impl.SocketChannelController.dispatchReadEvent(SocketChannelController.java:80)
+	at com.taobao.gecko.core.nio.impl.NioController.onRead(NioController.java:201)
+	at com.taobao.gecko.core.nio.impl.Reactor.dispatchEvent(Reactor.java:490)
+	at com.taobao.gecko.core.nio.impl.Reactor.processSelectedKeys(Reactor.java:312)
+	at com.taobao.gecko.core.nio.impl.Reactor.run(Reactor.java:255)
+23:16:46,064 ERROR AbstractController:107 - java.net.ConnectException: Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at com.taobao.gecko.core.extension.GeckoTCPConnectorController.onConnect(GeckoTCPConnectorController.java:99)
+	at com.taobao.gecko.core.nio.impl.Reactor.dispatchEvent(Reactor.java:500)
+	at com.taobao.gecko.core.nio.impl.Reactor.processSelectedKeys(Reactor.java:312)
+	at com.taobao.gecko.core.nio.impl.Reactor.run(Reactor.java:255)
