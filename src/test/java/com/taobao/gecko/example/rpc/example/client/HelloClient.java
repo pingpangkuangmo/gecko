@@ -19,11 +19,13 @@ import com.taobao.gecko.example.rpc.client.RpcProxyFactory;
 import com.taobao.gecko.example.rpc.example.Hello;
 import com.taobao.gecko.example.rpc.example.server.HelloImpl;
 import com.taobao.gecko.service.Connection;
+import com.taobao.gecko.service.impl.ReconnectManager;
 
 
 public class HelloClient {
 	
 	Connection con;
+	ReconnectManager reconnectManager;
 	
     public static void main(String[] args) throws Exception {
         RpcProxyFactory factory = new RpcProxyFactory();
